@@ -1,0 +1,99 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: rgb (0,0,0);
+    color: rgba(red, blue, yellow);
+    text-align: center;
+}
+
+ul, li { 
+    list-style: none;
+}
+
+main {
+    width: 50vw;
+    height: 25vh;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.card_content {
+    box-shadow: 0 0.2em 1em rgba (0,0,0,0.1), 0, 1em 2em
+    rgba(0,0,0,0.1);
+    background: rgb(blue,blue, blue);
+    color: rgb(10,5,7);
+    border-radius: 1em;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas: "text img";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: stretch;
+}
+
+.card_content > div {
+    grid-area: text;
+    width: 80%;
+    place-self: center;
+    text-align: left;
+
+    display: grid;
+    gap: 1em;
+    place-items: start;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.card_content > figure > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 2.5em;
+    color: blue;
+    background-color: blue;
+
+}
+
+p {
+    color: brown;
+    background-color: brown;
+    font-family: sans-serif;
+    font-weight: 300;
+    line-height: 1.42;
+}
+
+h3 {
+    font-family: 'Segoe UI';
+    font-size: 2.0em;
+    color: blue;
+    background-color: blue;
+    justify-content: center;
+}
+
+.btn {
+    background: rgb(188,87,36);
+    color: rgb(255,255,255);
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5em;
+    border-radius: 0.25em;
+}
+
+.button :right {
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 0em;
+    color: blue;
+    box-shadow: 0ex;
+    display: inline-block;
+}
